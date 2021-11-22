@@ -1,0 +1,119 @@
+/* General setup */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1400px;
+  }
+  
+  /* Layout */
+  
+  section {
+    float: left;
+    width: 50%;
+  }
+  
+  aside {
+    float: left;
+    width: 30%;
+  }
+  
+  nav {
+    float: left;
+    width: 20%;
+  }
+  
+  footer {
+    clear: both;
+  }
+  
+  header, section, aside, nav, footer {
+    padding: 20px;
+  }
+  
+  /* header and footer */
+  
+  header, footer {
+    border-top: 5px solid #a66;
+    border-bottom: 5px solid #a66;
+  }
+  
+  /* WRITE YOUR CODE BELOW HERE */
+
+  @font-face {
+    font-family: gentium;
+    src:url('../fonts/GentiumBasic-Regular.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+   }
+  
+   html {
+    font-family: gentium;
+    font-size: 10px;
+   }
+  
+   h1 {
+      text-align: center;
+      font-size: 4rem;
+      line-height: 1.5;
+      letter-spacing: 1.5px;
+  }
+
+  p, ul, ol {
+        text-indent: 20px;
+        font-size: 1.8em;
+  }
+
+  h2 {
+      font-size: 3rem ;
+      letter-spacing: 1.5px;
+  }
+
+  a:link, a:visited {
+    color: #a56;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+a:active {
+    background-color: darksalmon;
+}
+
+/* Navigation's Links */
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav a, nav a:link, nav a:visited {
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #a56;
+    text-decoration: none;
+}
+
+nav a:hover, nav:focus {
+    color: orangered;
+    border: 1px solid orangered;
+    font-size: 20px; /* nav a:active ? */
+}
+
+nav a:active {
+    border: none;
+    background-color: orangered;
+    color: black;
+}
+
+a[href*="http"] {
+    background: url("photos/external-link-52.png") no-repeat 100% 0;
+    background-size: 18px 18px;
+    padding-right: 20px;
+}
